@@ -1,0 +1,73 @@
+\documentclass{IEEEtran}
+
+% packages for citations
+\usepackage{cite} % used for making citations
+
+% packages for code
+\usepackage{listings}
+
+%packages for color
+\usepackage{xcolor} % used to set page colors
+
+% packages for formatting
+\usepackage{fancyvrb} % used for setting the page verbatim formatting
+\usepackage{geometry} % used for setting the page geometry
+\usepackage{lastpage} % used for setting the page counter
+
+% packages for graphics
+\usepackage{graphicx} % used for making cool graphics
+\usepackage{pgfplots} % used for making plots
+\usepackage{tikz} % used for making pictures
+
+% packages for mathematics
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithm} % used for making algorithms
+% \usepackage{algorithmic} % used for making algorithms
+% \usepackage{algorithmicx} % used for making algorithms
+\usepackage{algpseudocode} %  used for making sudocode
+\usepackage{cancel} % used to cross out equations and terms
+\usepackage{bm} % used to improve some bold math symbols
+\usepackage{fixmath} % used to fix some math symbol problems
+\usepackage{kbordermatrix} % used for making column and row labels in matrices
+
+% packages for tables
+\usepackage{array} % used for making tables
+
+% packages for text
+\usepackage{booktabs} % used for spacing rows in tables
+\usepackage{fancyhdr} % used for making fancy headers
+\usepackage{glossaries} % used for making glossaries
+\usepackage{glossaries-extra} % used for making glossaries
+\usepackage{hyperref} % used for hyperlinks
+\usepackage{textcomp} % used for adding more text options
+% \usepackage{quotechap} % used for making cool chapter headings
+\usepackage{xspace} % used for trailing space
+
+% Define colors
+\definecolor{commentgreen}{RGB}{2,112,10}
+\definecolor{eminence}{RGB}{108,48,130}
+\definecolor{weborange}{RGB}{255,165,0}
+\definecolor{frenchplum}{RGB}{129,20,83}
+
+% Define C++ listing
+\lstset {
+    language=C++,
+    frame=tb,
+    tabsize=4,
+    showstringspaces=false,
+    numbers=left,
+    % upquote=true,
+    commentstyle=\color{commentgreen},
+    keywordstyle=\color{eminence},
+    stringstyle=\color{red},
+    basicstyle=\small\ttfamily, % basic font setting
+    emph={int,char,double,float,unsigned,void,bool},
+    emphstyle={\color{blue}},
+    escapechar=\&,
+    % keyword highlighting
+    classoffset=1, % starting new class
+    otherkeywords={>,<,.,;,-,!,=,~},
+    morekeywords={>,<,.,;,-,!,=,~},
+    keywordstyle=\color{weborange},
+    classoffset=0,
+}
