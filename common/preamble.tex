@@ -1,12 +1,14 @@
-\documentclass{IEEEtran}
+\documentclass{article}
+\usepackage[utf8]{inputenc}
 
 % packages for citations
 \usepackage{cite} % used for making citations
+\usepackage{natbib} % used for making bibliographies
 
 % packages for code
 \usepackage{listings}
 
-%packages for color
+% packages for color
 \usepackage{xcolor} % used to set page colors
 
 % packages for formatting
@@ -49,7 +51,10 @@
 \definecolor{weborange}{RGB}{255,165,0}
 \definecolor{frenchplum}{RGB}{129,20,83}
 
-% Define C++ listing
+% Define plot settings
+\pgfplotsset{compat=1.16}
+
+% Define listings
 \lstset {
     language=C++,
     frame=tb,
