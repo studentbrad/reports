@@ -1,14 +1,16 @@
 ### TeX ###
 ## Core latex/pdflatex auxiliary files:
 *.aux
+*.bbl
+*.blg
 *.lof
 *.log
 *.lot
 *.fls
 *.out
 *.toc
-*.bbl
-*.blg
+*.fdb_latexmk
+*.xdv
 
 ## Intermediate documents:
 *.dvi
